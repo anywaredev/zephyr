@@ -1,0 +1,8 @@
+# CANBed M4 Board selection
+
+# Copyright (c) 2022 Slawomir Ciesielski <slawomir.ciesielski@anyware.dev>
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_CANBED_M4
+	bool "CANBed M4"
+	depends on SOC_PART_NUMBER_SAME51G19A

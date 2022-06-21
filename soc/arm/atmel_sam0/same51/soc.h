@@ -13,8 +13,13 @@
 
 #include <zephyr/types.h>
 
-
-#if defined(CONFIG_SOC_PART_NUMBER_SAME51J18A)
+#if defined(CONFIG_SOC_PART_NUMBER_SAME51G18A)
+#include <same51g18a.h>
+#elif defined(CONFIG_SOC_PART_NUMBER_SAME51G19A)
+#include <same51g19a.h>
+#elif defined(CONFIG_SOC_PART_NUMBER_SAME51G20A)
+#include <same51g20a.h>
+#elif defined(CONFIG_SOC_PART_NUMBER_SAME51J18A)
 #include <same51j18a.h>
 #elif defined(CONFIG_SOC_PART_NUMBER_SAME51J19A)
 #include <same51j19a.h>

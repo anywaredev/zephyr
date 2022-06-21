@@ -1,0 +1,17 @@
+identifier: canbed_m4
+name: CANBed M4
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - gpio
+  - spi
+  - watchdog
+  - xplained_gpio
+  - xplained_i2c
+  - xplained_serial
+  - xplained_spi
+  - hwinfo

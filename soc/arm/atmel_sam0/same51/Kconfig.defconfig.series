@@ -9,8 +9,11 @@ config SOC_SERIES
 	string
 	default "same51"
 
-config SOC_PART_NUMBER
+config SOC_PART_NUMBERh
 	string
+	default "same51g18a" if SOC_PART_NUMBER_SAME51G18A
+	default "same51g19a" if SOC_PART_NUMBER_SAME51G19A
+	default "same51g20a" if SOC_PART_NUMBER_SAME51G20A
 	default "same51j18a" if SOC_PART_NUMBER_SAME51J18A
 	default "same51j19a" if SOC_PART_NUMBER_SAME51J19A
 	default "same51j20a" if SOC_PART_NUMBER_SAME51J20A

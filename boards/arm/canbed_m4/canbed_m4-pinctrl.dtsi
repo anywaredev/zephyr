@@ -1,0 +1,44 @@
+/*
+ * Copyright (c) 2022 Slawomir Ciesielski <slawomir.ciesielski@anyware.dev>
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <dt-bindings/pinctrl/same51g-pinctrl.h>
+
+&pinctrl {
+	sercom1_spi_default: sercom1_spi_default {
+		group1 {
+			pinmux = <PA0D_SERCOM1_PAD0>,
+				 <PA1D_SERCOM1_PAD1>,
+				 <PB23C_SERCOM1_PAD3>;
+		};
+	};
+
+	sercom2_i2c_default: sercom2_i2c_default {
+		group1 {
+			pinmux = <PA12C_SERCOM2_PAD0>,
+				 <PA13C_SERCOM2_PAD1>;
+		};
+	};
+
+	sercom3_uart_default: sercom3_uart_default {
+		group1 {
+			pinmux = <PA17D_SERCOM3_PAD0>,
+				 <PA16D_SERCOM3_PAD1>;
+		};
+	};
+
+	usb_dc_default: usb_dc_default {
+		group1 {
+			pinmux = <PA25H_USB_DP>,
+				 <PA24H_USB_DM>;
+		};
+	};
+
+	can0_default: can0_default {
+		group1 {
+			pinmux = <PA23I_CAN0_RX>,
+				 <PA22I_CAN0_TX>;
+		};
+	};
+};

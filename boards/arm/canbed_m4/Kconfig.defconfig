@@ -1,0 +1,11 @@
+# CANBed M4 Board configuration
+
+# Copyright (c) 2022 Slawomir Ciesielski <slawomir.ciesielski@anyware.dev>
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_CANBED_M4
+
+config BOARD
+	default "canbed_m4"
+
+endif # BOARD_CANBED_M4
