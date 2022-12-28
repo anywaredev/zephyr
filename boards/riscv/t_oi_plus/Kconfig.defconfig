@@ -1,0 +1,21 @@
+# ESP32C3 devkitm board configuration
+
+# Copyright (c) 2021 Espressif Systems (Shanghai) Co., Ltd.
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD
+	default "t_oi_plus"
+	depends on BOARD_T_OI_PLUS
+
+config HEAP_MEM_POOL_SIZE
+	default 98304 if WIFI
+	default 16384 if BT
+	default 4096
+
+if BT
+
+choice BT_HCI_BUS_TYPE
+	default BT_ESP32
+endchoice
+
+endif # BT
